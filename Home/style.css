@@ -1,0 +1,360 @@
+body {
+
+    margin: 0;
+    background: linear-gradient(180deg, #3F0140, purple);
+    font-family: "Roboto", sans-serif;
+
+}
+
+.roboto-light-italic {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+header {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2vw;
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 2vw 4vw;
+
+}
+
+.navLinks {
+    display: flex;
+    gap: 4vw; /* Reduzi o gap para melhor comportamento */
+    text-align: center;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Suavização personalizada */
+    padding: 0.5vw 1vw;
+    border: 2px solid transparent; /* Borda transparente inicial */
+    border-radius: 0.5vw;
+    white-space: nowrap; /* Evita quebra de texto */
+}
+
+.navLinks a:hover {
+    color: #3F0140;
+    font-weight: 600;
+    background-color: white;
+    border-color: #ef78dc;
+    transform: scale(1.05); /* Efeito de zoom sutil */
+    box-shadow: 0 4px 12px rgba(239, 120, 220, 0.3);
+}
+
+
+.iconImage a {
+
+    display: flex;
+    /* background-color: rgb(192, 243, 181); */
+    border-radius: 5vw;
+    justify-content: start;
+    align-items: start;
+
+
+}
+
+#btnEnter a {
+
+    text-decoration: none;
+    color: aliceblue;
+    border: white solid 1px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+#btnEnter a:hover {
+
+    background-color: white;
+    color: #3F0140;
+    font-weight: 600;
+
+}
+
+.iconImage a #icon {
+
+    width: 4vw;
+
+}
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.introduceGroup {
+
+    padding: 2vw 5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6vw 0vw 6vw 0vw;
+
+}
+
+.textIntroduce {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    color: white;
+    width: 50%;
+    /* background-color: aquamarine; */
+
+
+}
+
+.textTitleIntro {
+
+    font-size: 60px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.textTitleIntro span {
+
+    color: #ef78dc;
+
+}
+
+.IntroDescript {
+
+    margin: 1vw 7vw 0vw 0vw;
+    font-size: 1rem;
+    /* background-color: #ef78dc; */
+
+}
+
+.gifIntro img {
+    border-radius: 1vw;
+}
+
+.music {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: purple;
+    border-radius: 12px;
+
+
+}
+
+#musicTitle {
+
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 1vw 2vw 1vw 2vw;
+
+}
+
+.linkMusic {
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5vw;
+    margin: 0vw 2vw 2vw 2vw;
+
+}
+
+.introMembers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 4vw 5vw;
+    gap: 5vw;
+}
+
+.imageIntroMembers {
+    display: grid;
+    grid-template-areas: "overlay";
+    width: 100%;
+    max-width: 400px;
+    height: 350px;
+    position: relative;
+    padding: 5vw 0vw 25vw 0vw;
+}
+
+.imageIntroMembers img {
+    grid-area: overlay;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ef78dc;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* Imagem principal sempre visível inicialmente */
+#image-principal1 {
+    opacity: 1;
+}
+
+/* Efeito quando o mouse está sobre o container */
+.imageIntroMembers:hover img {
+    opacity: 0;
+}
+
+.imageIntroMembers:hover #image-principal1 {
+    opacity: 0;
+}
+
+.imageIntroMembers:hover .image1 {
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+
+.imageIntroMembers:hover .image2 {
+    opacity: 1;
+    transition-delay: 1.5s;
+}
+
+.imageIntroMembers:hover .image3 {
+    opacity: 1;
+    transition-delay: 2.5s;
+}
+
+.imageIntroMembers:hover .image4 {
+    opacity: 1;
+    transition-delay: 3.5s;
+}
+
+.textIntroMembers {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    width: 50%;
+    /* background-color: #3F0140; */
+}
+
+.textTitleMembers {
+
+    font-size: 4rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+
+
+}
+
+.textTitleMembers span {
+    color: #ef78dc;
+}
+
+
+
+.MembersDescript {
+    font-size: 1rem;
+    color: white;
+
+}
+
+.btnPagMemebrs {
+
+    margin: 2vw 0vw;
+
+}
+
+
+#pagMembers {
+    
+    
+    text-decoration: none;
+    font-size: 1rem;
+    color: aliceblue;
+    border: white solid 1px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+     
+}
+
+#pagMembers:hover {
+
+    background-color: white;
+    color: #3F0140;
+    font-weight: 600;
+
+}
+
+.forms {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    color: #ffffff;
+    background-color: #3F0140;
+    padding: 5vw 0vw;
+
+}
+
+.formsTile{
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0vw 0vw 0vw 0vw;
+
+ }
+
+.myDescript {
+
+    font-size: 1rem;
+    color: #ffffff;
+    width: 40%;
+    text-align: center;
+
+}
+
+#clickForms{
+
+     text-decoration: none;
+    font-size: 1rem;
+    color: aliceblue;
+    border: white solid 1px;
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+     
+
+}
+
+#clickForms:hover {
+
+    background-color: white;
+    color: #3F0140;
+    font-weight: 600;
+
+}
