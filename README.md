@@ -68,7 +68,7 @@ Se você também é fã do aespa, junte-se ao fandom e explore esse universo inc
    ```
 2. Acesse a pasta do projeto:
    ```bash
-   cd Aespa-supernova-site-theme
+   cd Aespa-Supernova-Site
    ```
 3. Abra o arquivo **index.html** no navegador.
 
